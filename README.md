@@ -8,6 +8,9 @@ Final project for Udemy course - using Docker
 4. You must add your own API key in the `controllers/image.js` file to connect to Clarifai API.
 5. You will also need to update Line 22 in server.js to your client app port (i.e. 3001)
 
+**Important:** if you are getting conflict erros, you should run `docker stop <container name>` that is already running in the background.
+**Important:** if you are getting other erros, you should run `docker-compose down` to bring everything down, and start over.
+
 To access backend's bash:
 Run `docker-compose exec smart-brain-api bash`
 
