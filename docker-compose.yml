@@ -36,6 +36,7 @@ services:
     environment:
       POSTGRES_URI: postgres://admin:password@postgres:5432/smart-brain
       REDIS_URI: redis://redis:6379
-    links:
-      - postgres
-      - redis
+    # Heads up! Docker has updated this feature and now you don't need to define the links property in order for things to work - https://docs.docker.com/compose/networking/
+    # links:
+    #   - postgres
+    #   - redis
