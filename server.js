@@ -14,7 +14,7 @@ const auth = require('./controllers/authorization');
 //Database Setup
 const db = knex({
   client: 'pg',
-  connection: process.env.POSTGRES_URI
+  connection: process.env.POSTGRES_URI 
 });
 
 const app = express();
