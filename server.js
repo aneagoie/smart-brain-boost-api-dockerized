@@ -1,5 +1,5 @@
 const express = require('express');
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser'); // latest version of exressJS now comes with Body-Parser!
 const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
 const knex = require('knex');
@@ -32,7 +32,7 @@ const corsOptions = {
 
 app.use(morgan('combined'));
 app.use(cors(corsOptions))
-app.use(bodyParser.json());
+app.use(express.json()); // latest version of exressJS now comes with Body-Parser!
 
 app.post('/signin', signin.signinAuthentication(db, bcrypt))
 app.post('/register', (req, res) => { register.handleRegister(req, res, db, bcrypt) })

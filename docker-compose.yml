@@ -24,7 +24,7 @@ services:
   # Backend
   smart-brain-api:
     # env_file:
-    #   - ./.private/api-keys.env "Another way to insert env variables"
+    #   - ./.private/api-keys.env "Another way to insert env variables" 
     container_name: backend
     build: ./
     volumes:
