@@ -44,3 +44,4 @@ app.post('/imageurl', auth.requireAuth, (req, res) => { image.handleApiCall(req,
 app.listen(3000, ()=> {
   console.log('app is running on port 3000');
 })
+
