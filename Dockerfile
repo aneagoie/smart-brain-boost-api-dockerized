@@ -1,4 +1,4 @@
-FROM node:16.12.0
+FROM node:18.17.1
 
 # Create app directory
 RUN mkdir -p /usr/src/smart-brain-api
@@ -12,7 +12,7 @@ RUN npm install
 COPY . /usr/src/smart-brain-api
 
 # Build arguments
-ARG NODE_VERSION=16.12.0
+ARG NODE_VERSION=18.17.1
 
 # Environment
 ENV NODE_VERSION $NODE_VERSION
