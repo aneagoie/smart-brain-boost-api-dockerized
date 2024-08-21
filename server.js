@@ -11,7 +11,7 @@ const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 const auth = require('./controllers/authorization');
 
-//Database Setup
+//Database Setup 
 const db = knex({
   client: 'pg',
   connection: process.env.POSTGRES_URI 
