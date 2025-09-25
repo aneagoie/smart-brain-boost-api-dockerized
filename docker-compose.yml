@@ -1,6 +1,5 @@
 version: '3.8'
 services:
-
   # PostgreSQL 
   postgres:
     container_name: postgres

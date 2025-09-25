@@ -1,4 +1,4 @@
-FROM node:20.5.1 
+FROM node:22.20.0 
 
 # Create app directory
 RUN mkdir -p /usr/src/smart-brain-api
